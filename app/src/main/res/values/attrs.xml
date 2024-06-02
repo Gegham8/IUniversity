@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="Faculties">
+        <attr name="layoutToHide" format="reference" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">IUniversity</string>
+    <string-array name="dropdown_items">
+        <item>Description 1</item>
+        <item>Description 2</item>
+        <item>Description 3</item>
+        <!-- Add more descriptions as needed -->
+    </string-array>
+</resources>

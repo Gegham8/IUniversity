@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.InformationPage"
+    android:background="#959595"
+    android:id="@+id/informationCard"
+    android:paddingBottom="10dp"
+    >
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CardView.Light"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="10dp"
+            android:background="#E2E2E2"
+            android:paddingTop="10dp"
+            android:paddingBottom="12dp">
+
+
+            <ImageView
+                android:id="@+id/university_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/round_style"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintDimensionRatio="H,16:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/university_name"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="80dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#555555"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/university_image" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/faculties_text_views_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/rounded_background_button"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/profession_view_wrapper"
+                android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingHorizontal="10dp">
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/facultyButton"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_background_button"
+                android:drawableEnd="@drawable/accardion"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif"
+                android:padding="10dp"
+                android:text="ֆԱԿՈՒԼՏԵՏՆԵՐ"
+                android:textAlignment="viewStart"
+                android:textColor="#676767"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintTop_toBottomOf="@id/university_name"
+                tools:ignore="MissingConstraints"
+                 />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="30dp"
+                android:background="#8D8D8D"
+                android:paddingBottom="20dp"
+                app:layout_constraintTop_toBottomOf="@id/facultyButton"
+                app:layout_constraintStart_toStartOf="parent"
+                 />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/text_views_wrapper"
+                android:tag="text_views_wrapper"
+                app:layout_constraintTop_toBottomOf="@id/divider2">
+
+        <TextView
+                android:id="@+id/founded_view"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider2"
+                 />
+
+
+            <TextView
+                android:id="@+id/rector_view"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/founded_view"
+                />
+
+
+            <TextView
+                android:id="@+id/location_view"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:drawablePadding="8dp"
+                app:layout_constraintTop_toBottomOf="@id/rector_view"
+                android:drawableStart="@drawable/location_svgrepo_com"
+                android:gravity="center_vertical"
+                 />
+
+            <TextView
+                android:id="@+id/phone_view"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/phone_svgrepo_com"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/location_view"
+                 />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
